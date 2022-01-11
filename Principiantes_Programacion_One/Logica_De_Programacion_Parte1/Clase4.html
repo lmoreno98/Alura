@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<script>
+
+	// Creacion de funciones sin parametro
+	function saltarLinea() 
+	{
+		document.write("<br>");
+	}
+	
+	// Creacion de funcion con parametro
+	function imprimir(mensaje)
+	{
+		document.write(mensaje);
+	}
+
+	// Saltos de linea en una linea
+	var saltoLinea = "<br>";
+
+	document.write("Luciano");
+	document.write(saltoLinea);
+	document.write("Moreno");
+	document.write(saltoLinea+saltoLinea)
+
+
+	// Salto de multiples lineas
+	var saltoLinea = "<br><br><br>";
+
+	document.write("Luciano");
+	document.write(saltoLinea);
+	document.write("Moreno");
+	document.write(saltoLinea)
+
+	// Saltar linea usando funciones
+	document.write("Luciano");
+	saltarLinea();
+	document.write("Moreno");
+	saltarLinea();
+
+	// Utilizar funciones con paramentros
+	imprimir("Este es un mensaje en una funcion");
+</script>
