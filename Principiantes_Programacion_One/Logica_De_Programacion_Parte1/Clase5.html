@@ -1,0 +1,59 @@
+<meta charset="UTF-8">
+<h3> Calcular el IMC</h3>
+<script>
+	
+	// Creacion de funciones sin parametro
+	function saltarLinea() 
+	{
+		document.write("<br>");
+	}
+	
+	// Creacion de funcion con parametro
+	function imprimir(mensaje)
+	{
+		document.write(mensaje);
+		saltarLinea();
+	}
+
+	// Creacion funcion para el calculo del imc
+	function calculoImc(peso,altura,nombre)
+	{
+		var imc = peso / (altura*altura);
+		imprimir("El IMC de "+ nombre +  " es de :" + imc);
+		return(imc)
+	}
+
+	// Funcion calculo promedio de imc
+	function calculoPromImc(peso1,altura1,nombre1,peso2,altura2,nombre2)
+	{
+		var imc1 = calculoImc(peso1,altura1,nombre1);
+		var imc2 = calculoImc(peso2,altura2,nombre2);
+		var prom = (imc1+imc2)/2 
+		
+		imprimir("El promedio de imc de " +nombre1 +" " +nombre2 + " es de " + prom)
+	}
+
+	// llamando con variables
+	var peso = 85;
+	var altura = 1.78;
+	calculoImc(peso,altura,"Luciano")
+
+
+	//llamando directo
+	calculoImc(70,1.70,"Juan")
+
+	saltarLinea()
+	saltarLinea()
+	
+	//Calculo promedio de imc
+	calculoPromImc(85,1.78,"Luciano",70,1.70,"Juan")
+
+	//Interaccion con el usuario
+	var nombreIngresado = prompt("Ingrese su nombre");
+	var pesoIngresado = prompt(nombreIngresado + " Informe su peso");
+	var alturaIngresado = prompt(nombreIngresado + " Informe su altura");
+
+	calculoImc(pesoIngresado,alturaIngresado,nombreIngresado);
+
+
+</script>
