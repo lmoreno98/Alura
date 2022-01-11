@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+
+
+<script>
+	
+	// Funcion salta de linea
+	function saltarLinea()
+	{
+		// <hr> hace que nos ponga una line recta para separar
+		document.write("<br>");
+		document.write("<hr>");
+
+	}
+
+
+	// Funcion imprime el mensaje
+	function imprimir(mensaje)
+	{
+		//<big>"" </big> aumenta el tamaño del mensaje
+		document.write("<big>Grande</big>");
+		saltarLinea();
+		document.write(mensaje);
+		saltarLinea();
+	}	
+
+	var edad1 = 24;
+	var edad2 = 26;
+	var diferenciaEdad = edad1 - edad2;
+
+	imprimir("Nuestra diferencia de edad es " + diferenciaEdad + " años");
+
+
+</script>
+
