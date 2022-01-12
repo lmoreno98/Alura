@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA JUEGO DE ADIVINACION </h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function sortea(num)
+    {
+        
+        return(Math.round(Math.random()*num))
+    }
+    var numeroPedido = parseInt(prompt("Ingrese el rango maximo del numero"));
+    var numeroPensado = sortea(numeroPedido);
+    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"));
+
+    if (numeroPensado == numeroLanzado){
+        imprimir("usted acertó");
+    }
+
+    else 
+    {
+        if (numeroPensado > numeroLanzado)
+        {
+                imprimir("El numero ingresado es menor al numero pensado")
+        }   
+        else if (numeroPensado < numeroLanzado)
+        {
+                imprimir("El numero ingresado es mayor al numero pensado")
+        }   
+    }
+        
+    
+
+</script>
