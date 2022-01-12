@@ -1,0 +1,123 @@
+<meta charset="utf-8">
+
+<h1>Año mundial fifa</h1>
+
+<script>
+	
+	function saltarLinea() 
+	{
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function imprimir(mensaje)
+	{
+		document.write(mensaje);
+		saltarLinea();
+	}
+
+	var añoMundial = 1930;
+	var contadorMundial = 1;
+	var añoIngresado = parseInt(prompt("Ingrese el año limite para calcular "));
+	
+	// bucle while es igual a python
+	while (añoMundial <= añoIngresado);
+	 {
+
+		imprimir("Hubo mudial de la fifa en el año" + añoMundial + "<br>" + " Fue el " + contadorMundial + " Mundial");
+	
+		añoMundial = añoMundial + 4;
+		contadorMundial = contadorMundial + 1;
+	}
+	imprimir("Fin");
+
+
+</script>
+
+
+
+<h1>Tabla de multiplicar</h1>
+
+<script>
+
+	var TablaMultiplicar = parseInt(prompt("Ingrese el numero de la tabla de multiplicar "));
+	var aux = 0;
+	while ( aux <= 10)
+	 {
+
+	imprimir(TablaMultiplicar + " X " + aux + " = " + aux*TablaMultiplicar);
+	aux = aux + 1;
+
+	}
+	imprimir("Fin")
+
+	// Bucle for
+	for(aux = 0; aux <= 10; aux++)
+	{
+		imprimir(TablaMultiplicar + " X " + aux + " = " + aux*TablaMultiplicar);
+	}
+
+</script>
+
+
+<h1>Media de las edades de una familia</h1>
+
+<script>
+	
+	var cantidadFamiliares = parseInt(prompt("Ingrese la cantidad de familiares"))
+	var totalEdad = 0
+	for(var i = 1; i <= cantidadFamiliares; i++)
+	{
+		totalEdad = totalEdad + parseInt(prompt("Ingrese la edad de la persona " + i))
+	}
+	
+	var mediaEdad = totalEdad/cantidadFamiliares
+	imprimir("La media de las edades de la familia es " + mediaEdad)
+
+</script>
+
+</script>
+
+<h1>Juego de adivinacion</h1>
+
+
+<script>
+
+	function sortea(num)
+    {
+        
+        return(Math.round(Math.random()*num))
+    }
+
+	var intentos = 3;
+	var contador = 1
+	var numeroPedido = parseInt(prompt("Ingrese el rango maximo del numero"));
+    var numeroPensado = sortea(numeroPedido);
+
+
+	while( contador <= intentos	)
+	{ 
+
+    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-" + numeroPedido));
+
+		if (numeroPensado == numeroLanzado){
+        alert("usted acertó en el inteno " + contador + " el numero pensado era " + numeroPensado);
+        break;
+    }
+
+    else 
+    {
+        if (numeroPensado > numeroLanzado)
+        {
+                alert("El numero ingresado es menor al numero pensado")
+
+        }   
+        else if (numeroPensado < numeroLanzado)
+        {
+                alert("El numero ingresado es mayor al numero pensado")
+        }   
+    }
+		contador++;
+	}
+
+</script>
