@@ -1,0 +1,63 @@
+<meta charset="utf-8">
+
+
+<h1>Numeros del 1 al 100</h1>
+<script>
+
+	function saltarLinea()
+	{
+		document.write("<br>");
+	}
+
+	function imprimir(mensaje)
+	{
+		document.write(mensaje);
+		saltarLinea();
+	}
+	
+	var num = 2;
+	var maxNum = 100
+	for (num; num <= 100; num = num +2)
+	{
+		imprimir(num);
+	}
+	imprimir("Fin")
+
+</script>
+
+
+<meta charset="UTF-8">
+<script>
+
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+
+    var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+    var contrasenhaIngresada;
+    var intentos = 3;
+    var contador = 1;
+
+
+    while(contador <= intentos)
+    {
+    	contrasenhaIngresada = prompt("Ingrese su contraseña");
+    	if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) 
+    	{
+        alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+        break;
+    	} 
+    else 
+    {
+    	if (contador == 3)
+    	{
+    		alert("Alcanzaste los maximos intentos permitidos!")
+    	}
+    	else
+    	{
+        	alert("inicio de sesión inválido. Favor intente de nuevo");
+        }
+    }
+    contador++
+    }
+    
+</script>
