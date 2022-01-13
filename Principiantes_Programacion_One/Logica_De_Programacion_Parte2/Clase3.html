@@ -1,0 +1,57 @@
+<meta charset="utf-8">
+<h1>Juego secreto</h1>
+
+
+<!-- El comando input pone un cuadro en la pantalla para que el usario pueda escribir -->
+<input/>
+
+<!-- El comando button crea un botton para realizar algo en la pantalla -->
+<button>Verificar si acerto con el secreto</button>
+
+
+<script>
+	
+	function saltarLinea()
+	{
+		document.write("<br>");
+	}
+
+
+	function imprimir(mensaje)
+	{
+		document.write(mensaje);
+	}
+
+	// Creamos una funcion para llamar el verificar
+	function verificar()
+	{
+		if(secreto == parseInt(input.value))
+		{
+			alert("Usted acerto");
+		}
+		else
+		{
+			alert("Usted erro");
+		}
+
+		// Elimino el buffer del input
+		input.value = "";
+
+		// Hacemos que el cursor se ponga automaticamente en el input
+		input.focus()
+
+
+	}
+	var secreto = Math.round(Math.random()*10);
+
+	// Usamos document.querySelector para tomar el valor del input del html
+	var input = document.querySelector("input");
+	input.focus()
+
+	// Llamamos el objeto buton de html
+	var button = document.querySelector("button");
+
+	// la funcion onclick se usa para verificar si el botton se apreto y no se usa los () en la funcion llamada
+	button.onclick = verificar;
+
+</script>
