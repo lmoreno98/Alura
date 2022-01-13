@@ -1,0 +1,102 @@
+<meta charset="utf-8">
+<h1>Juego secreto</h1>
+
+
+<input/>
+
+<button>Verificar si acerto con el secreto</button>
+
+
+<script>
+	
+	function saltarLinea(){
+
+		document.write("<br>");
+	}
+
+
+	function imprimir(mensaje){
+
+		document.write(mensaje);
+	}
+
+	function verificar(){
+
+		var encontrado = false;
+
+		// Tamaño de array con variable.length
+		// Recorrer el array
+		for(var posicion = 0; posicion < secretos.length; posicion++){
+
+			if(secretos[posicion] == parseInt(input.value)){
+
+				alert("Usted acerto");
+				encontrado = true;
+				break;
+			}
+		}
+		if (encontrado == false){ 
+			
+			alert("Usted erro");
+		}
+		
+		input.value = "";
+
+		input.focus()
+	}
+
+	function aleatorio(){
+
+		return(Math.round(Math.random()*10))
+	}
+
+	function sortearNumeros(cantidad){
+		var secretos = [];
+		var contador;
+		var numeroAleatorio;
+		
+
+		for(contador = 0; contador < cantidad;contador){
+
+			var encontrado = false;
+			numeroAleatorio = aleatorio();
+			
+
+			// Reviso duplicados
+			for(var posicion = 0; posicion < secretos.length; posicion++){
+				
+				if(numeroAleatorio == secretos[posicion]){
+					encontrado = true
+					break;
+				}
+
+			}
+
+			if(encontrado == false){
+				
+				// Insertar valores en arreglos
+				secretos.push(numeroAleatorio);
+				contador++	
+
+			}
+
+		}
+		return secretos
+	}
+
+	// Creacion de arrays vacia
+	var secretos = [];
+
+	var cantidad = parseInt(prompt("Ingrese la cantidad de valores"))
+	secretos = sortearNumeros(cantidad)
+	var input = document.querySelector("input");
+	input.focus();
+
+	var button = document.querySelector("button");
+
+	button.onclick = verificar;
+
+	// Nos muestra en la consola los valores de secretos
+	console.log(secretos)
+
+</script>
