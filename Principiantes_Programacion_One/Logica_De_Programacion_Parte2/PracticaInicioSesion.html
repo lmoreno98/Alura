@@ -1,0 +1,45 @@
+<meta charset="utf-8">
+<h1>Facebook</h1>
+Correo electronico
+<input id = "mailIng">
+<br>
+Contraseña
+<input id = "contraseñaIng">
+<br>
+<button>Ingresar</button>
+
+<script>
+
+	function validacion()
+	{
+		if(mail == inputMail.value)
+		{
+			if(contraseña == inputcontraseña.value)
+			{
+				alert("Usuario ingresado correcto")
+			}
+			else
+			{
+				alert("Usuario ingresado incorrecto")
+			}
+		}
+		else
+		{
+			alert("Usuario ingresado incorrecto")
+		}
+	}
+	
+	// Cuenta
+	var mail = "luchomoreno98@gmail.com"
+	var contraseña = "Lucho1998"
+
+	//llamada a los valores htlm
+	var inputMail = document.getElementById("mailIng")
+	var inputcontraseña = document.getElementById("contraseñaIng")
+
+	var button = document.querySelector("button")
+	button.onclick = validacion;
+
+
+
+</script>
