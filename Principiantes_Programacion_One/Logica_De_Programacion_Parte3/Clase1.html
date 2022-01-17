@@ -1,0 +1,43 @@
+<!-- Creacion de canvas que es una pantalla para diseñar width ancho height alto-->
+<canvas width="600" height="450"> </canvas>
+
+<script>
+	// Llamo al canvas para usarlo en js
+	var pantalla = document.querySelector("canvas");
+
+	// Creamos un pincel para pintar el canvas
+	var pincel = pantalla.getContext("2d");
+
+	// fillStyle es para cambiar el color del pincel
+	pincel.fillStyle = "lightgrey";
+
+	// Usar el pincel se utiliza fillRect tiene 4 paramentros (x0,y0,cuanto en x,cuanto en y) crear cuadrado
+	pincel.fillRect(0,0,600,400);
+
+	pincel.fillStyle = "lightblue";
+	pincel.fillRect(0,0,600,150);
+
+	pincel.fillStyle = "white";
+	pincel.fillRect(0,150,600,150);
+
+	pincel.fillStyle = "lightblue";
+	pincel.fillRect(0,300,600,150);
+
+	// Crear circulos
+	pincel.fillStyle = "yellow";
+	// beginpath() Iniciamos una ruta
+	pincel.beginPath();
+	pincel.arc(300,225,50,0,2*3.14);
+	pincel.fill();
+
+	// Crear triangulos
+	pincel.beginPath();
+	pincel.moveTo(300,400);
+	pincel.lineTo(100,600)
+	pincel.lineTo(500,600);
+	pincel.fill();
+
+	
+	
+
+</script>
