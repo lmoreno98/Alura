@@ -1,0 +1,74 @@
+<canvas width="600" height="400"> </canvas>
+
+
+<script>
+	var windows = document.querySelector("canvas");
+	var pencil = windows.getContext("2d");
+	pencil.fillStyle = "lightgrey";
+	pencil.fillRect(0,0,600,400);
+
+	// Inicializo variables
+	var xAleatorio;
+	var yAleatorio;
+	var radio = 10;
+	var x = 0;
+
+	// Creacion del circulos
+	function createArc(x,y,radius, color){
+
+		pencil.fillStyle = color;
+		pencil.beginPath();
+		pencil.arc(x,y,radius,0,2*Math.PI);
+		pencil.fill();
+	}
+
+	//Limpiar la pantalla
+	function clearWindows()
+	{
+		pencil.fillStyle = "lightgrey";
+		pencil.clearRect(0,0,600,400);
+		pencil.fillRect(0,0,600,400);
+	}
+
+	//Creacion de la diana
+	function target(x,y){
+
+		createArc(x,y,radio + 20,"red");
+		createArc(x,y,radio + 10,"white");
+		createArc(x,y,radio,"red");
+	}
+
+		// Sortear valores
+	function sortPos(max){
+
+		return Math.floor(Math.random()*max);
+	}
+
+	//Carga pantalla 
+	function reloadPage(){
+		clearWindows();		
+		xAleatorio = sortPos(600);
+		yAleatorio = sortPos(400);
+		target(xAleatorio,yAleatorio)
+		x++;	
+	}	
+
+	// Establesco intervalo de tiempo para correr
+	setInterval(reloadPage,1000);
+
+	function hitTarget(evento){
+
+		var x = evento.pageX - windows.offsetLeft;
+		var y = evento.pageY - windows.offsetTop;
+		console.log("Click X: " + x + "Y: " + y)
+		if ((x < xAleatorio + radio) && 
+			(x > xAleatorio - radio) && 
+			(y < yAleatorio + radio) && 
+			(y > yAleatorio - radio)){
+				alert("Tiro Certero")
+		} 
+	}
+
+	windows.onclick = hitTarget;
+
+</script>
