@@ -1,0 +1,23 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+	
+	function circl(x,y,radio,color){
+
+		pencil.fillStyle = color;
+		pencil.beginPath();
+		pencil.arc(x,y,radio,0,3.14*2);
+		pencil.fill();
+	}
+
+	windows = document.querySelector("canvas");
+	pencil = windows.getContext("2d");
+
+	circl(300,150,25,"yellow");
+	circl(300,200,25,"red");
+	circl(250,200,25,"orange");
+	circl(350,200,25,"black");
+	circl(300,250,25,"blue")
+
+
+</script>
