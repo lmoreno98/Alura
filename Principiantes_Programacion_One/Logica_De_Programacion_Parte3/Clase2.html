@@ -1,0 +1,38 @@
+<canvas width="600" height="400"> </canvas>
+
+
+<script>
+	
+	// Creamos una funcion para crear cuadrados de 50x50 con distintos colores
+	function square(x0,y0,color){
+
+		pencil.fillStyle = color
+		pencil.fillRect(x0,y0,50,50);
+		pencil.strokeStyle = "black"
+		pencil.strokeRect(x0,y0,50,50)
+	}
+
+	windows = document.querySelector("canvas");
+	pencil = windows.getContext("2d");
+
+	pencil.fillStyle = "green";
+	pencil.fillRect(0,0,50,50);
+	//Creo un cuadrado que sea solo bordes
+	pencil.strokeStyle = "black"
+	pencil.strokeRect(0,0,50,50)
+
+	square(0,200,"green");
+	square(50,200,"yellow");
+	square(0,250,"blue");
+	square(50,250,"red")
+
+	// Creo un bucle para crear muchos cuadrados
+	var i = 0
+	while(i < 600){
+		square(i,0,"green");
+		square(i,50,"red");
+		square(i,100,"yellow");
+		i = i+50;
+	}
+
+</script>
