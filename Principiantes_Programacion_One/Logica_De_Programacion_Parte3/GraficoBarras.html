@@ -1,0 +1,59 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+
+    function dibujarRectangulo(x, y, base, altura, color) {
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        pincel.fillStyle=color;
+        pincel.fillRect(x,y, base, altura);
+        pincel.strokeStyle="black";
+        pincel.strokeRect(x,y, base, altura);
+    }
+
+    // Escribir texto con canvas
+    function escribirTexto(x , y, texto) {
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        pincel.font="15px Georgia";
+        pincel.fillStyle="black";
+        pincel.fillText(texto, x, y);    
+    }
+
+    var serie2009 = [6,47,41,3,3];
+    var serie2019 = [81,9,3,3,4];
+    var colors = ["blue","green","yellow", "red","gray"];
+    var browser = ["Chrome","Firefox","Explorer","Safari","Otros"];
+
+
+    function dibujarBarra(x,y,serie,colores,texto){ 
+        var i;
+        var acumulador = y+20
+        for(i = 0; i < 5; i++){
+
+            dibujarRectangulo(x,acumulador,50,serie[i],colors[i]);
+            acumulador = acumulador + serie[i];
+        }
+        escribirTexto(x+10,y,texto);
+    }
+    // Crear leyendas
+    function leyenda(x,y,color,texto){
+
+        dibujarRectangulo(x,y,10,10,color)
+        escribirTexto(x+20,y+10,texto)
+    }
+    escribirTexto(300,50,"Leyenda")
+
+    for(i=0;i<5;i++){
+
+        leyenda(300,60+(i*20),colors[i],browser[i]);    
+    }
+    
+
+    //Dibujo las dos barras
+    dibujarBarra(50,50,serie2009,colors,"2009");
+    dibujarBarra(150,50,serie2019,colors,"2019");
+
+</script>
