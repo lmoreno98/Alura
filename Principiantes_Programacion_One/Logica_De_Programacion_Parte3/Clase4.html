@@ -1,0 +1,37 @@
+<canvas width="600" height="400"> </canvas>
+
+
+<script>
+	var windows = document.querySelector("canvas");
+	var pencil = windows.getContext("2d");
+
+	pencil.fillStyle = "lightgrey";
+	pencil.fillRect(0,0,600,400);
+
+	function createArc(x,y,radius){
+
+		pencil.fillStyle = "blue";
+		pencil.beginPath();
+		pencil.arc(x,y,radius,0,2*Math.PI);
+		pencil.fill();
+	}
+
+	function clearWindows()
+	{
+		pencil.fillStyle = "lightgrey";
+		//Borra todo lo que esta en el canvas
+		pencil.clearRect(0,0,600,400);
+		pencil.fillRect(0,0,600,400);
+	}
+	var x = 0
+
+	function reloadPage(){
+
+		clearWindows();
+		createArc(x,20,10);
+		x++;
+	}
+	// Este valor nos deja poner un intervalo de tiempo para que corra el programa
+	setInterval(reloadPage,5)
+
+</script>
