@@ -1,0 +1,41 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+	
+	var windows = document.querySelector("canvas");
+	var pencil = windows.getContext("2d");
+
+	pencil.fillStyle = "grey";
+	pencil.fillRect(0,0,600,400);
+
+	function escribirAlerta(evento){
+
+		// Buscamos las coordenadas del click
+		// Sacamos los margenes de pantalla
+		var x = evento.pageX - windows.offsetLeft;
+		var y = evento.pageY - windows.offsetTop;
+		console.log(evento);
+		alert("Usted hizo un clic " + "Coordenadas X: " + x + " Coordenadas Y: " + y);
+	}
+
+	// Dibujo circulo en las coordenadas del click
+	function dibujarCirculo(evento){
+
+		var x = evento.pageX - windows.offsetLeft;
+		var y = evento.pageY - windows.offsetTop;
+
+		pencil.fillStyle = "blue";
+		pencil.beginPath();
+		pencil.arc(x,y,10,0,2*3.14);
+		pencil.fill()
+
+	}
+	// Mostrar alerta en click
+	windows.onclick = escribirAlerta;
+
+	// Dibujamos en el click
+	windows.onclick = dibujarCirculo;
+
+	
+
+</script>
