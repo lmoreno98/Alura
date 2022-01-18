@@ -1,0 +1,46 @@
+<canvas width="600", height="400"></canvas>
+
+<script>
+	
+	windows = document.querySelector("canvas");
+	pencil = windows.getContext("2d");
+
+	pencil.fillStyle = "grey";
+	pencil.fillRect(0,0,600,400);
+	pencil.fillStyle = "blue"
+
+	function circle(x,y,color){
+		pencil.fillStyle = color;
+		pencil.beginPath();
+		pencil.arc(x,y,10,0,2*3.14);
+		pencil.fill();
+	}
+
+	function circleInWindows(event){
+		var x = event.pageX - windows.offsetLeft;
+		var y = event.pageY - windows.offsetTop;
+		console.log(event);
+		circle(x,y,pencil.fillStyle);
+	}
+	function changeColor(){
+
+		if(pencil.fillStyle == "#0000ff"){
+
+			pencil.fillStyle = "#ff0000";
+		}
+		else if(pencil.fillStyle == "#ff0000"){
+
+			pencil.fillStyle = "#008000";
+		}
+		else if(pencil.fillStyle == "#008000"){
+
+			pencil.fillStyle = "#0000ff";
+		}
+
+	}
+	windows.onclick = circleInWindows;
+	
+	// Click secundario con on contextmenu
+	windows.oncontextmenu = changeColor;
+
+</script>
