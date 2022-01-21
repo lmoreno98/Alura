@@ -1,8 +1,8 @@
-var mensajeEntrada = document.getElementById("mensaje");
-var encriptar = document.getElementById("encriptar");
-var desencriptar = document.getElementById("desencriptar")
-var salida = document.getElementById("salida")
-var copiarButton = document.getElementById('copiar')
+var mensajeEntrada = document.querySelector("#input-texto");
+var encriptar =  document.querySelector("#btn-encriptar");
+var desencriptar = document.querySelector("#btn-desencriptar")
+var salida = document.querySelector("#msg")
+var copiarButton = document.querySelector('#btn-copiar')
 mensajeEntrada.value = ""
 salida.value = ""
 
@@ -92,6 +92,7 @@ function copiar(){
 
 	mensajeEntrada.value = salida.value
 	salida.value = ""
+	mensajeEntrada.focus();
 }
 
 	mensajeEntrada.focus();
