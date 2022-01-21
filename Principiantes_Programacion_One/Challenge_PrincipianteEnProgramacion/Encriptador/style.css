@@ -1,21 +1,74 @@
-body {
-  background-color: lightgray;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+*{
+    margin-top: 10px;
+    margin-left: auto;
+    padding: 0;
 }
-.btn{
-  border: 1;
-  color: blue;
-  font-weight: bold;
-  background-color: ligthgrey;
-  padding: 5px;
-  margin-top: 10px;
-  border-radius: 0.5em;
-}
-.lbl{
-  width: 300px;
-  height: 100px;
-  border: 1px solid blue;
-  box-sizing: border-box;
-  outline-style: outset;
+body{
+    background-color: #93ccff;
+    font-family: 'Times New Roman', Times, serif, Geneva, Tahoma, sans-serif;
 }
 
+.box{
+    background-color: lightcyan;
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    width: 500px;
+    height: 200px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.main {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    
+  }
+.text-input{
+    border-radius: 5px;
+    height: 100px;
+    width: 480px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    font-size: large;
+    font-family: inherit;
+    color: rgb(5, 1, 37);
+}
+.h3-box{
+    margin-top: 2px;
+    margin-bottom: 10px;
+    margin-left: 115px;
+    color:rgb(13, 13, 78)
+}
+.h3-msg{
+    margin-top: 2px;
+    margin-bottom: 10px;
+    margin-left: 160px;
+    color:rgb(13, 13, 78)
+}
+
+h1{
+    margin-left: 575px;
+    color:rgb(13, 13, 78)
+}
+.btn1{
+    margin-top: 15px;
+    margin-right: 105px;
+    margin-left: 22px;
+    background-color: white;
+    color: rgb(45, 25, 223);
+    width: 120px;
+    height: 35px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.btn2{
+    margin-top: 15px;
+    margin-left: 185px;
+    background-color: white;
+    color: rgb(45, 25, 223);
+    width: 120px;
+    height: 35px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;    
+}
