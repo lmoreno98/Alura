@@ -1,23 +1,29 @@
 <!DOCTYPE html>
+<meta charset="UTF-8">
+
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+    <link rel = "icon" href="icon.ico" type = "imgae/x-icon">
+    <link rel = "stylesheet" type = "text/css" href="style.css">
+
 </head>
 
-<h1> Codigo Secreto </h1>
 <body>
-	<main>
-		<input id = "mensaje" class = "lbl">
-		<button id = "encriptar" class="btn">Encriptar</button>
-		<button id = "desencriptar" class="btn">Desencriptar</button>
-	</main>
+    <h1>Encriptador</h1>
+    <main class = "main">
+        <section class="form box">
+            <h3 class ="h3-box">Solo letras minúsculas, sin acento</h3>
+            <textarea class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui"></textarea>
+            <button class="btn1" id="btn-encriptar">Encriptar!</button>
+            <button class="btn1" id="btn-desencriptar">Desencriptar!</button>
+        </section>
 
-
-
+        <section class="msg box">
+            <h3 class="h3-msg">Mensaje encriptado</h3>
+            <textarea class="text-input" type="text" id="msg"></textarea>
+            <button class="btn2" id="btn-copiar">Copiar</button>
+          </section>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
-
-<h1>Mensaje encriptado</h1>
-<input id = "salida" class = "lbl">
-<button id = "copiar" class="btn">Copiar</button>
-
-<script src="script.js"></script>
