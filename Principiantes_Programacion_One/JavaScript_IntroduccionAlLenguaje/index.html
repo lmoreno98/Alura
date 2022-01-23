@@ -74,8 +74,33 @@
 
 			</section>
 		</main>
+		<section class="container">
+			<h2 id="titulo-form">Adicionar nuevo paciente</h2>
+			<!-- Pongo un id para reconocer el form-->
+			<form id = "form-adicionar">
+				<div class="grupo">
+					<label for="nombre">Nombre:</label>
+					<input id="nombre" name="nombre" type="text" placeholder="digite el nombre del paciente" class="campo">
+				</div>
+				<div class="grupo">
+					<label for="peso">Peso:</label>
+					<input id="peso" name="peso" type="text" placeholder="digite el peso del paciente" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="altura">Altura:</label>
+					<input id="altura" name="altura" type="text" placeholder="digite la altura del paciente" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="gordura">% de Gordura:</label>
+					<input id="gordura" type="text" placeholder="digite el porcentaje de gordura del paciente" class="campo campo-medio">
+				</div>
+				<button id="adicionar-paciente" class="boton bto-principal">Adicionar</button>
+			</form>
+		</section>
 		
 		<!-- Refiero al codigo de javaScrips desde otro archivo -->
-		<script src="js/scripsClase2.js"></script>
+		<script src="js/calcularImc.js"></script>
+		<!-- Refiero al segundo codigo-->
+		<script src="js/form.js"></script>
 	</body>
 </html>
