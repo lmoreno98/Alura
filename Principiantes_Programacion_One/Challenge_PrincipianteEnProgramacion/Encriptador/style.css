@@ -12,8 +12,8 @@ body{
     background-color: lightcyan;
     padding: 10px;
     margin: 0 10px 0 10px;
-    width: 500px;
-    height: 200px;
+    width: 50%;
+    height: auto;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
 }
@@ -27,7 +27,7 @@ body{
 .text-input{
     border-radius: 5px;
     height: 100px;
-    width: 480px;
+    width: 95%;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     font-size: large;
     font-family: inherit;
@@ -36,24 +36,24 @@ body{
 .h3-box{
     margin-top: 2px;
     margin-bottom: 10px;
-    margin-left: 115px;
+    margin-left: 25%;
     color:rgb(13, 13, 78)
 }
 .h3-msg{
+    margin-left: 30%;
     margin-top: 2px;
     margin-bottom: 10px;
-    margin-left: 160px;
-    color:rgb(13, 13, 78)
+    color:rgb(13, 13, 78);
 }
 
 h1{
-    margin-left: 575px;
+    margin-left: 45%;
     color:rgb(13, 13, 78)
 }
 .btn1{
     margin-top: 15px;
-    margin-right: 105px;
-    margin-left: 22px;
+    margin-right: 22%;
+    margin-left: 2%;
     background-color: white;
     color: rgb(45, 25, 223);
     width: 120px;
@@ -64,7 +64,7 @@ h1{
 
 .btn2{
     margin-top: 15px;
-    margin-left: 185px;
+    margin-left: 35%;
     background-color: white;
     color: rgb(45, 25, 223);
     width: 120px;
