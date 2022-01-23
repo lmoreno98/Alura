@@ -90,11 +90,15 @@ function desencriptado(){
 }
 function copiar(){
 
+	// Copio en el portapapeles la salida
+	salida.select()
+	document.execCommand("copy");
+	
 	mensajeEntrada.value = salida.value
 	salida.value = ""
 	mensajeEntrada.focus();
-}
 
+}
 	mensajeEntrada.focus();
 
 // Llamo a todos los botones
