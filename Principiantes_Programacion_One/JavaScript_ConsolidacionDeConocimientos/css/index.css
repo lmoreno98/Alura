@@ -136,3 +136,12 @@ button[disabled=disabled], button:disabled {
 .paciente-incorrecto{
 	background-color: lightcoral;
 }
+
+#mensajes-errores{
+	color: red;
+}
+
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
+}
