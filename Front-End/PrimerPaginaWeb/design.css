@@ -1,0 +1,65 @@
+/* Es recomendable hacer los estilos en la misma dispocision que hacemos en el codigo html */
+.titulo-principal{
+    padding-left: 30px;
+}
+
+#banner-barberia{
+    /* Pongo la imagen en todo el ancho de la pantalla */
+    width: 100%;
+}
+
+.principal{
+
+    /* Cambio el color de fondo */ 
+    background: #CCCCCC;
+
+    /* Dar un pading para el espaciamiento interno */
+    padding: 20px;
+}
+
+.titulo-centralizado{
+    text-align: center;
+}
+
+p{
+    /* Alinear el texto en el centro */
+    text-align: center;
+}
+
+#p-misión{
+    /* Le doy tamaño a las palabras */
+    font-size: 20px;
+}
+
+/* Si se pone la etiqueta padre e hijo ya podemos ver bien a que etiqueta queremos referenciar */
+em strong{
+    color: red;
+}
+
+.diferenciales{
+    background:#FFFFFF;
+    padding: 30px;
+} 
+
+/* Lamo a la clase items */
+.items{
+    /* Le doy un tipo de texto italico */
+    font-style: italic;
+}
+
+ul{
+    /* Hacemos que la lista solo ocupe el espacio de su contenido */
+    display:inline-block;
+
+    /* Aliñamiento vertical */
+    vertical-align: top;
+
+    /* Anchura de la lista */
+    width: 20%;
+    margin-right: 15%;
+}
+
+.img-diferenciales{
+    /* Disminuyo el tamaño de la imagen */
+    width: 50%;
+}
