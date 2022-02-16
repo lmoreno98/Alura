@@ -1,0 +1,41 @@
+header{
+    background-color: #BBBBBB;
+    /* Ajusto para que el header tenga mas espaciado de arriba y abajo */
+    padding: 20px 0;
+}
+
+/* Mejoro la barra del header para los posicionamientos */
+.barra-navegador{
+    width: 940px;
+    /* Posicion relativa para que el nav y la imagen se muevan el respesto a su posicion original */
+    position: relative;
+    /* los margenes de arriba y abajo son 0 para no moverse y los de los costados son automaticos para que se centren a lo hecho */
+    margin: 0 auto;
+}
+
+nav{
+    /* Posicion absoluta es para posicionar un objeto a cualquier parte de la pagina con 0 el inicio */
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    /* Display: inline nos deja poner los links uno al lado del otro */
+    display: inline;
+}
+
+nav a{
+    /* Mayusculas */
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 0 0 0 15px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color:#d1830d
+}
