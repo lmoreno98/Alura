@@ -39,3 +39,36 @@ nav a:hover{
     text-decoration: underline;
     color:#d1830d
 }
+
+.ul-productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+/* Realizo los ajustes necesarios para que la lista quede en el centro y una al lado de la otra */
+.ul-productos li{
+    display:inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align:top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    /* Con esto podemos hacer que la caja no se pase del limite de la caja */
+    box-sizing: border-box;
+}
+
+.ul-productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.producto-descripcion{
+    font-size:18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
