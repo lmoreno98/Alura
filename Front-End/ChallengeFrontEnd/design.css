@@ -1,0 +1,98 @@
+html{
+    background: #F5F5F5;
+}
+main{
+    font-family: Raleway;
+    color: #464646;
+}
+
+
+.barra-navegador{
+    width: 940px;
+    position: relative;
+    margin: 0 130px;
+    padding: 20px;
+}
+.barra-navegador p{
+    font-size:15px;
+    display: inline;
+    position: relative;
+    right: 22px;
+    bottom:5px;
+}
+.estrella2{
+    display: inline;
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+}
+.estrella1{
+    position: relative;
+    right: 8px;
+    top:2px;
+}
+
+nav{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+nav li {
+    display: inline;
+}
+
+nav a{
+    margin: 0 15px 0 0;
+    color: #464646;
+    text-decoration: none;
+}
+
+.redes-presentacion{
+    width: 740px;
+    margin: 50px 0 0 0;
+    padding: 0 152px;
+}
+.redes-presentacion h1{
+    font-size:52px;
+    font-family: Raleway;
+    font-style: normal;
+    color: #464646;
+}
+.redes-presentacion p{
+    margin-top: 24px;
+    font-size:22px;
+    font-family: Raleway;
+    font-style: normal;
+    color: #464646;
+}
+
+.redes-presentacion li{
+    display: inline;
+}
+
+.redes-presentacion ul{
+    padding: 24px 0 0 0;
+}
+
+.redes-presentacion a{
+    margin: 24px 15px 0 0;
+    color: #464646;
+    font-size: 16px;
+    text-decoration: none;
+}
+.redes-presentacion img{
+    height: 270px;
+    border-radius: 50%;
+    position: relative;
+    left: 740px;
+    bottom: 230px;
+}
+.sobre-mi{
+    background: #EAF2FD;
+    width: 740px;
+    margin: 50px 0 0 0;
+    padding: 0 152px;
+}
+.sobre-mi h1{
+    font-size: 32px;
+}
