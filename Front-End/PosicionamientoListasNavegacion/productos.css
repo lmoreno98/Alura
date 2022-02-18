@@ -56,6 +56,9 @@ nav a:hover{
     padding: 30px 20px;
     /* Con esto podemos hacer que la caja no se pase del limite de la caja */
     box-sizing: border-box;
+    /* Creacion dell borde de los productos */
+    border: 2px solid #000000;
+    border-radius: 10px;
 }
 
 .ul-productos h2{
