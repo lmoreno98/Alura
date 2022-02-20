@@ -1,70 +1,78 @@
-<!-- El DOCTYPE siempre se declara al inicio -->
 <!DOCTYPE html>
-
-<!-- El tag html Siempre se pone y recorre todo el codigo -->
-<!-- Decir en que lenguaje va estar escrita la pagina -->
 <html lang="es">
-    
-    <!-- En este tag va estar la parte informativa -->
+
     <head>
-
-        <!-- LLamo a la hoja con el codigo css -->
-        <link rel="stylesheet" type="text/css" href="design.css">
-
-        <!-- Mostrar que diccionario vamos a utilizar -->
         <meta charset="UTF-8">
-
-        <!-- Definir un titulo -->
-        <title>Barbería Alura</title>
-
+        <title>Barberia Alura</title>
+        <!-- Linkeo el reseteador del diseño del codigo html va antes que el archivo de los diseños-->
+        <link rel="stylesheet" type="text/css" href="../PosicionamientoListasNavegacion/reset.css">
+        <link rel="stylesheet" type="text/css" href="../PosicionamientoListasNavegacion/productos.css">
+        <link rel="stylesheet" type="text/css" href="design.css">
     </head>
-
+    
     <!-- En este tag va estar el contenido -->
     <body>
-        
         <!-- En este tag va todo el encabezado-->
         <header>
-
-            <h1 class="titulo-principal">Barbería Alura</h1>
-
+            <!-- Creamos un div mara mejorar los margenes de el header -->
+            <div class="barra-navegador">
+                <!-- Insertamos el logo de la pagina -->
+                <h1><img alt="Logo barberia" src="../PosicionamientoListasNavegacion/imagenes/logo.png"></h1>
+    
+                <!-- El tag nav es una etiqueta para poner los links de navegacion-->
+                <nav>
+                    <!-- Creamos una lista de los links en el header -->
+                    <ul class="navegacion">
+                        <li><a href="../PrimerPaginaWeb/index.html">Home</a></li>
+                        <li><a href="../PosicionamientoListasNavegacion/productos.html">Productos</a></li>
+                        <li><a href="../FormularioTablas/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        
-        
-        <!-- Añado imagen-->
-        <img id="banner-barberia" alt="Banner barberia" src="banner.jpg">
-        
-        <div class="principal">
-            <!-- Creacion de un titulo principal en la pantalla -->
-            <h2 class="titulo-centralizado">Sobre la Barbería Alura</h2>
-            
-            <!-- Creacion de un parrafo-->
-            <!-- Strong es para poner una palabra en negrita -->
-            <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p> 
-    
-            <!-- em es para poner enfasis en una palabra osea en italic -->
-            <p id = "p-misión"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p>
-            
-            <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
-            
-        </div>
 
-        <!-- Creo un div de los diferenciales -->
-        <div class="diferenciales">
+        <main>
+             <!-- Añado imagen-->
+            <img id="banner-barberia" alt="Banner barberia" src="banner.jpg">
+            
+            <div class="principal">
+                <!-- Creacion de un titulo principal en la pantalla -->
+                <h2 class="titulo-centralizado">Sobre la Barbería Alura</h2>
+                
+                <!-- Creacion de un parrafo-->
+                <!-- Strong es para poner una palabra en negrita -->
+                <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p> 
+        
+                <!-- em es para poner enfasis en una palabra osea en italic -->
+                <p id = "p-misión"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p>
+                
+                <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
+                
+            </div>
 
-            <h3 class="titulo-centralizado"> Diferenciales </h2>
-    
-            <!-- Creacion de una lista -->
-            <ul>
-                <!-- Creacion de cada item de la lista y dandole una clase -->
-                <li class = "items">Atención personalizada a los clientes</li>
-                <li class = "items">Espacio diferenciado</li>
-                <li class = "items">Localización</li>
-                <li class = "items">Profesionales calificados</li>
-            </ul>
+            <!-- Creo un div de los diferenciales -->
+            <div class="diferenciales">
 
-            <!-- Llamo a la imagen de los diferenciales-->
-            <img class="img-diferenciales" src="diferenciales.jpg">
-        </div>
+                <h3 class="titulo-centralizado"> Diferenciales </h2>
+        
+                <!-- Creacion de una lista -->
+                <ul class="diferenciales-lista">
+                    <!-- Creacion de cada item de la lista y dandole una clase -->
+                    <li class = "items">Atención personalizada a los clientes</li>
+                    <li class = "items">Espacio diferenciado</li>
+                    <li class = "items">Localización</li>
+                    <li class = "items">Profesionales calificados</li>
+                </ul>
+
+                <!-- Llamo a la imagen de los diferenciales-->
+                <img class="img-diferenciales" src="diferenciales.jpg">
+            </div>
+        </main>
+        <footer>
+            <img src="../PosicionamientoListasNavegacion/imagenes/logo-blanco.png">
+            <p class="copyright">&copy Copyright Barbería Alura - 2020</p>     
+        </footer>
     </body>
-    
+
+
 </html>
