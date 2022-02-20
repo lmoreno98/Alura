@@ -49,6 +49,7 @@ nav a{
 
 .redes-presentacion{
     width: 740px;
+    height:248px;
     margin: 50px 0 0 0;
     padding: 0 152px;
 }
@@ -89,10 +90,48 @@ nav a{
 }
 .sobre-mi{
     background: #EAF2FD;
-    width: 740px;
     margin: 50px 0 0 0;
-    padding: 0 152px;
+    padding: 50px 152px;
 }
 .sobre-mi h1{
     font-size: 32px;
+}
+
+.sobre-mi p{
+    padding: 10px 0 0 0;
+    width: 751px;
+    font-size:16px;
+    line-height: 18.78px;
+}
+
+.skills h1{
+    font-size:30px;
+    text-align: center;    
+}
+
+.skills ul{
+    padding-top:  32px;
+    padding-left: 152px;
+}
+
+.skills li{
+    height: 174px;
+    width: 176px;
+    display: inline-block;  
+    background-color:#FFF;
+    margin-left: 16px;  
+}
+.skills h2 {
+    position: relative;
+    top: 116px;
+    left: 16px;
+    color: #464646;
+}
+
+.skills img {
+    width: 24px;
+    height: 37px;
+    position: relative;
+    top: 100px;
+    left: 16px;
 }
