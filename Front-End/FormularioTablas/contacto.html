@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Barberia Alura</title>
+        <!-- Linkeo el reseteador del diseño del codigo html va antes que el archivo de los diseños-->
+        <link rel="stylesheet" type="text/css" href="../PosicionamientoListasNavegacion/reset.css">
+        <link rel="stylesheet" type="text/css" href="../PosicionamientoListasNavegacion/productos.css">
+        <link rel="stylesheet" type="text/css" href="contacto.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- Creamos un div mara mejorar los margenes de el header -->
+            <div class="barra-navegador">
+                <!-- Insertamos el logo de la pagina -->
+                <h1><img alt="Logo barberia" src="../PosicionamientoListasNavegacion/imagenes/logo.png"></h1>
+    
+                <!-- El tag nav es una etiqueta para poner los links de navegacion-->
+                <nav>
+                    <!-- Creamos una lista de los links en el header -->
+                    <ul class="navegacion">
+                        <li><a href="../PrimerPaginaWeb/index.html">Home</a></li>
+                        <li><a href="../PosicionamientoListasNavegacion/productos.html">Productos</a></li>
+                        <li><a href="../FormularioTablas/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!-- Crea un lugar para el formulario -->
+            <form>
+                <!-- Siempre cuando llamo un input ponemos un label con for = al id del input-->
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input id="nombreapellido" type="text">
+
+                <label for="correoelectronico">Correo Electrónico</label>
+                <input id="correoelectronico" type="text">
+
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" type="text">
+
+                <input type="submit" value="Enviar Formulario">
+            </form>
+        </main>
+        <footer>
+            <img src="../PosicionamientoListasNavegacion/imagenes/logo-blanco.png">
+            <p class="copyright">&copy Copyright Barbería Alura - 2020</p>     
+        </footer>
+    </body>
+
+
+</html>
