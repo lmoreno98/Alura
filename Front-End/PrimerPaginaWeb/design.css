@@ -47,7 +47,7 @@ em strong{
     font-style: italic;
 }
 
-ul{
+.diferenciales-lista{
     /* Hacemos que la lista solo ocupe el espacio de su contenido */
     display:inline-block;
 
