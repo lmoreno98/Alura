@@ -7,15 +7,58 @@ form{
     margin: 40px 0;
 }
 
-form label{
+form label ,form legend{
     /* Display block deja cada objecto uno abajo del otro */
     display: block;
-    font: size 20px;
+    font-size: 20px;
     margin: 0 0 10px;
 }
-form input{
+
+/* Para no repetir el mismo codigo se puede poner otro objeto con en el mismo tipo para que le de el mismo formato con una coma*/
+
+.input-padron, form textarea{
     display: block;
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width:40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    /* Hacemos que toda la transicion tarde 1s en cambiar */
+    transition: 1s all;
+    /* Cambio el tipo de cursor cuando este encima del boton */
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color:darkorange;
+    /* Cambiamos el tamaño del boton cuando pasamos el cursor por encima */
+    transform: scale(1.2);
+
+}
+
+table{
+    margin: 40px;
+}
+thead{
+    background: #555555;
+    color: #fff;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000;
+    padding: 8px 15px;
 }
