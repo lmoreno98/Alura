@@ -31,21 +31,87 @@
         <main>
             <!-- Crea un lugar para el formulario -->
             <form>
+                <!-- Para que los datos si o si tengan que ser insertados ponemos la etiqueta required en el input -->
                 <!-- Siempre cuando llamo un input ponemos un label con for = al id del input-->
                 <label for="nombreapellido">Nombre y Apellido</label>
-                <input id="nombreapellido" type="text">
+                <input id="nombreapellido" type="text" class="input-padron" required>
 
                 <label for="correoelectronico">Correo Electrónico</label>
-                <input id="correoelectronico" type="text">
+                <input id="correoelectronico" type="email" class="input-padron"required placeholder="email@dominio.com">
 
                 <label for="telefono">Teléfono</label>
-                <input id="telefono" type="text">
+                <input id="telefono" type="tel" class="input-padron"required placeholder="(XX) XXXX XXXX">
 
-                <input type="submit" value="Enviar Formulario">
+                <!-- Creo un input con un cuadro de texto-->
+                <label for="mensaje" required>Mensaje</label>
+                <!-- Cols y rows es para el tamaño del cuador de texto -->
+                <textarea cols="70" rows="10" id="mensaje"></textarea>
+
+
+                <!-- Usamos la etiqueta fieldset para organizar campos de un formulario -->
+                <fieldset>
+                    <!-- Legend es para poner el titulo al fieldset-->
+                    <legend>¿Como le gustaria que lo contactemos?</legend>
+                    <!-- Creo un radio input-->
+                    <!-- El name en el input radio es para que esten relacionado todos los input y pueda seleccionar solo 1-->
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+    
+                    <!-- Para tener una opcion ya puesta usamos cheked en el input que queremos tener apretado-->
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+
+                </fieldset>
+                
+                <fieldset>
+
+                    <legend>¿En cual horario prefiere ser atendido?</legend>
+                    <select>
+                        <option value="">Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                    
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" name="" checked>¿Le gustaria recibir novedades de la Barbería Alura?</label>
+                <input type="submit" value="Enviar Formulario" class="enviar">
             </form>
+
+            <!-- Creacion de tablas -->
+            <table>
+                <!-- Encabezado de tabla-->
+                <thead>
+                    <!-- Creo las filas-->
+                    <tr>
+                        <!-- Creo las columnas-->
+                        <th>Día</td>
+                        <th>Horario</th>
+                    </tr>
+                    
+                </thead>
+
+                <!-- Contenido de tabla -->
+                <tbody>
+                    
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+
+                </tbody>
+            </table>
         </main>
         <footer>
-            <img src="../PosicionamientoListasNavegacion/imagenes/logo-blanco.png">
+            <img src="../PosicionamientoListasNavegacion/imagenes/logo-blanco.png" alt="Logo barberia ">
             <p class="copyright">&copy Copyright Barbería Alura - 2020</p>     
         </footer>
     </body>
