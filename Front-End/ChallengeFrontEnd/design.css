@@ -40,14 +40,12 @@ header{
 }
 
 nav{
-    /* Posicion absoluta es para posicionar un objeto a cualquier parte de la pagina con 0 el inicio */
     position: absolute;
     top: 34px;
     right: 0;
 }
 
 nav li{
-    /* Display: inline nos deja poner los links uno al lado del otro */
     display: inline;
 }
 
@@ -147,6 +145,7 @@ nav a{
     background-color:#FFF;
     margin-left: 16px;  
 }
+
 .tarjetas h2 {
     position: relative;
     top: 116px;
