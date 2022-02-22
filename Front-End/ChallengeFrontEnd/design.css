@@ -1,70 +1,82 @@
-html{
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
+
+body{
     background: #F5F5F5;
-}
-main{
-    font-family: Raleway;
     color: #464646;
+    font-family: 'Raleway', sans-serif;
 }
 
-
-.barra-navegador{
+header{
     width: 940px;
-    position: relative;
-    margin: 0 130px;
-    padding: 20px;
+    margin: 0 auto;
 }
-.barra-navegador p{
+.barra-navegador{
+    /* Posicion relativa para que el nav y la imagen se muevan el respesto a su posicion original */
+    position: relative;
+    /* los margenes de arriba y abajo son 0 para no moverse y los de los costados son automaticos para que se centren a lo hecho */
+    padding: 34px 0;
     font-size:15px;
-    display: inline;
-    position: relative;
-    right: 22px;
-    bottom:5px;
 }
+
+.barra-navegador p {
+    display: inline;
+    font-weight: bold;
+    position: relative;
+    bottom: 4px;
+    right: 12px;
+}
+
+.estrella1{
+    position: relative;
+    right: 6px;
+    top:2px;
+}
+
 .estrella2{
     display: inline;
     position: relative;
     bottom: 10px;
-    right: 20px;
-}
-.estrella1{
-    position: relative;
-    right: 8px;
-    top:2px;
+    right: 18px;
 }
 
 nav{
+    /* Posicion absoluta es para posicionar un objeto a cualquier parte de la pagina con 0 el inicio */
     position: absolute;
-    top: 20px;
+    top: 34px;
     right: 0;
 }
-nav li {
+
+nav li{
+    /* Display: inline nos deja poner los links uno al lado del otro */
     display: inline;
 }
 
+nav li{
+    margin: 0 0 0 32px;
+}
+
 nav a{
-    margin: 0 15px 0 0;
     color: #464646;
     text-decoration: none;
 }
+#nav-contacto{
+    font-weight: bold;
+}
 
 .redes-presentacion{
-    width: 740px;
-    height:248px;
+    width:700px;
     margin: 50px 0 0 0;
-    padding: 0 152px;
 }
+
 .redes-presentacion h1{
+    font-weight: bold;
     font-size:52px;
-    font-family: Raleway;
-    font-style: normal;
-    color: #464646;
 }
+
 .redes-presentacion p{
     margin-top: 24px;
     font-size:22px;
-    font-family: Raleway;
-    font-style: normal;
-    color: #464646;
+    line-height:26px;
 }
 
 .redes-presentacion li{
@@ -72,7 +84,7 @@ nav a{
 }
 
 .redes-presentacion ul{
-    padding: 24px 0 0 0;
+    padding: 26px 0 0 0;
 }
 
 .redes-presentacion a{
@@ -81,57 +93,75 @@ nav a{
     font-size: 16px;
     text-decoration: none;
 }
-.redes-presentacion img{
-    height: 270px;
+
+#imagen-frontal{
+    height: 285px;
     border-radius: 50%;
     position: relative;
-    left: 740px;
-    bottom: 230px;
+    top: -300px;
+    right: -72%;
 }
-.sobre-mi{
+
+
+.container-sobre-mi{
+    margin-top: -200px;
     background: #EAF2FD;
-    margin: 50px 0 0 0;
-    padding: 50px 152px;
 }
+
+.sobre-mi{
+    width: 940px;
+    margin:0 auto;
+    padding: 64px 0;
+}
+
 .sobre-mi h1{
     font-size: 32px;
+    font-weight: bold;
 }
 
 .sobre-mi p{
-    padding: 10px 0 0 0;
+    margin-top: 16px;
     width: 751px;
-    font-size:16px;
-    line-height: 18.78px;
+    font-size: 16px;
+    line-height: 19px;
 }
 
-.skills h1{
+.tarjetas{
+    width: 940px;
+    margin: 32px auto;
+}
+
+.tarjetas h1{
     font-size:30px;
     text-align: center;    
 }
 
-.skills ul{
-    padding-top:  32px;
-    padding-left: 152px;
+.tarjetas ul{
+    margin-top: 32px;
 }
 
-.skills li{
+.tarjetas li{
     height: 174px;
     width: 176px;
     display: inline-block;  
     background-color:#FFF;
     margin-left: 16px;  
 }
-.skills h2 {
+.tarjetas h2 {
     position: relative;
     top: 116px;
     left: 16px;
     color: #464646;
 }
 
-.skills img {
-    width: 24px;
-    height: 37px;
+.tarjetas img {
     position: relative;
     top: 100px;
     left: 16px;
+    height: 27px;
+    width: 22px
+}
+
+#hobbies{
+    margin-top: 88px;
 }
