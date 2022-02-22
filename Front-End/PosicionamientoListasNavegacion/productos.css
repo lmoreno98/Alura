@@ -1,3 +1,7 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 header{
     background-color: #BBBBBB;
     /* Ajusto para que el header tenga mas espaciado de arriba y abajo */
