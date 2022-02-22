@@ -8,14 +8,14 @@
         <link rel="stylesheet" href="design.css">
     </head>
 
-    <main>
+    <body>
 
         <header>
             <div class="barra-navegador">
                 <h1>
-                    <img class = "estrella" src="imagenes/Vector-2.png">
-                    <img class = "estrella1" src="imagenes/Vector.png">
-                    <img class = "estrella2" src="imagenes/Vector.png">
+                    <img class = "estrella" src="imagenes/estrella1.png">
+                    <img class = "estrella1" src="imagenes/estrella.png">
+                    <img class = "estrella2" src="imagenes/estrella.png">
                     <p>Luciano Moreno</p>
                 </h1>
                     <nav>
@@ -25,58 +25,91 @@
                             <li><a href="#hobbies">Hobbies</a></li>
                             <li><a href="#formación">Formación</a></li>
                             <li><a href="#proyectos">Proyectos</a></li>
-                            <li>luchomoreno98@gmail.com</li>
+                            <li id="nav-contacto">luchomoreno98@gmail.com</li>
                         </ul>
                     </nav>
 
             </div>
+            <div class="redes-presentacion">
+    
+                    <h1>Hola, mi nombre es Luciano Moreno y construyo paginas web</h1>
+                    <p>Soy estudiante autodidactico de programacion actualmente me encuentro participando del proyecto Oracle ONE en Alura Latam</p>
+                    <ul>
+                        <li><a href="https://github.com/lmoreno98">GitHub</a></li>
+                        <li><a href="https://ar.linkedin.com/in/luciano-moreno-bb6ab3191">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/luchomoreno07/">Instagram</a></li>
+                        <li><a href="Luciano Moreno.pdf">CV Español</a></li>
+                        <li><a href="Copia de English CV luciano.pdf">CV Ingles</a></li>
+                    </ul>
+                </div>
+    
+                <img id="imagen-frontal" src="Imagenes/Face.jpg">
         </header>
 
-        <body>
-            <div class="redes-presentacion">
+        <main>
+            <div class="container-sobre-mi">
 
-                <h1>Hola, mi nombre es Luciano Moreno y construyo paginas web</h1>
-                <p>Soy estudiante autodidactico de programacion actualmente me encuentro participando del proyecto Oracle ONE en Alura Latam</p>
-                <ul>
-                    <li><a href="https://github.com/lmoreno98">GitHub</a></li>
-                    <li><a href="https://ar.linkedin.com/in/luciano-moreno-bb6ab3191">LinkedIn</a></li>
-                    <li><a href="https://www.instagram.com/luchomoreno07/">Instagram</a></li>
-                    <li><a href="Luciano Moreno.pdf">CV Español</a></li>
-                    <li><a href="Copia de English CV luciano.pdf">CV Ingles</a></li>
-                </ul>
-                <img src="Imagenes/Face.jpg">
+                <div id="sobre-mi" class="sobre-mi">
+                    <h1>Sobre mi</h1>
+                    <p>Estudiante de ingenieria electronica y me apasiona la programacion, soy estudiante autodidacta de programacion, interesado en el area IT fullStack developer
+                        <br>
+                        Siempre buscando nuevas tecnologias en la cual desarrollarme
+                        <br>
+                        En mis tiempos libres practico rugby y megusta jugar con la computadora 
+                    </p>
+                </div>
+
             </div>
 
-            <div id="sobre-mi" class="sobre-mi">
-                <h1>Sobre mi</h1>
-                <p>Estudiante de ingenieria electronica y me apasiona la programacion, soy estudiante autodidacta de programacion, interesado en el area IT fullStack developer
-                    <br>
-                    Siempre buscando nuevas tecnologias en la cual desarrollarme
-                </p>
-            </div>
-
-            <div id="skills" class="skills">
+            <div id="skills" class="tarjetas">
                 <h1>Skills</h1>
                 <ul>
                     <li>
-                        <img src="Imagenes/html.png">
+                        <img alt="Logo Html5" src="Imagenes/html.png">
                         <h2>Html 5</h2>
                     </li>
                     <li>
-                        <img src="Imagenes/css.png">
+                        <img alt="Logo Css" src="Imagenes/css.png">
                         <h2>Css</h2>
                     </li>
                     <li>
-                        <img src="Imagenes/js.png">
+                        <img alt="Logo JavaScript" src="Imagenes/js.png">
                         <h2>Java Script</h2>
+                    </li>
+                    <li>
+                        <img alt="Logo JavaScript" src="Imagenes/python.png">
+                        <h2>Python</h2>
                     </li>
 
                 </ul>
             </div>
 
-        </body>
+            <div id="hobbies" class="tarjetas">
+                <h1>Hobbies</h1>
+                <ul>
+                    <li>
+                        <img alt="Logo Musica" src="Imagenes/musica.png">
+                        <h2>Escuchar musica</h2>
+                    </li>
+                    <li>
+                        <img alt="Logo Rugby" src="Imagenes/rugby.png">
+                        <h2>Rugby</h2>
+                    </li>
+                    <li>
+                        <img alt="Logo Series" src="Imagenes/television.png">
+                        <h2>Ver Series</h2>
+                    </li>
+                    <li>
+                        <img alt="Logo Computadora" src="Imagenes/computadora.png">
+                        <h2>Usar Computadora</h2>
+                    </li>
 
-    </main>
+                </ul>
+            </div>
+
+        </main>
+
+    </body>
 
 
 </html>
