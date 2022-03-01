@@ -107,3 +107,22 @@ footer{
     font-size: 13px;
     margin: 20px;
 }
+
+@media screen and (max-width:480px){
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .barra-navegador, .ul-productos{
+        width:auto;
+    }
+    .ul-productos li{
+        display:block;
+        width:100%;
+    }
+}
