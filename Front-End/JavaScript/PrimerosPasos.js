@@ -1,5 +1,5 @@
 console.log("Mi Primer Programa");
-console.log(2+2);
+console.log(2 + 2);
 
 /* Creacion de contantes */
 const nombre = "Luciano"
@@ -11,7 +11,7 @@ console.log(nombre);
 
 
 /* Concatenacion */
-console.log("Mi nombre es "+nombre + " Y tengo "+ edad + "años");
+console.log("Mi nombre es " + nombre + " Y tengo " + edad + "años");
 
 
 
@@ -71,7 +71,7 @@ const textoMiNombreDobles = "Mi nombre es: ${miNombre} ${miApellido}";
 console.log(textoMiNombreDobles);
 
 /* Listas */
-const ciudadesDisponibles = ["Bogotá", "Lima" , "Santiago","Buenos Aires"]
+const ciudadesDisponibles = ["Bogotá", "Lima", "Santiago", "Buenos Aires"]
 console.log(ciudadesDisponibles);
 
 /* Agregado de elementos en listas */
@@ -81,3 +81,36 @@ paisesDisponibles.push("Colombia");
 paisesDisponibles.push("Peru")
 console.log(paisesDisponibles);
 
+/* Operadores Logicos */
+/* if y else if */
+const edadComprador = 25;
+const estaAcompanado = true;
+const tienePasaje = true;
+
+if (edadComprador >= 18 || estaAcompanado) {
+    console.log("Es posible vender viaje");
+    console.log("Ciudades disponibles para viaje");
+    console.log(ciudadesDisponibles);
+}
+else {
+    console.log("El comprador no es mayor de edad");
+    console.log("No es posible ofrecer viajes");
+}
+
+console.log("Proceso de embarque: \n \n \n");
+if(tienePasaje && edadComprador >= 18){
+    console.log("Comprador con pasaje. Feliz Viaje");
+}
+
+/* Bucles */
+let posicion = 0;
+ciudadElegida = "Lima";
+while(posicion < ciudadesDisponibles.length){
+    if(ciudadesDisponibles[posicion] == ciudadElegida){
+        console.log("Destino disponible");
+    }
+    else{
+        console.log("Destino no disponible");
+    }
+    posicion = posicion + 1;
+}
