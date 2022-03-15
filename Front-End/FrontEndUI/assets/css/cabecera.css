@@ -1,0 +1,9 @@
+.cabecera{
+    align-items:center;
+    background: #F9F9F9;
+    /* Al poner display flex nos deja uno al lado del otro */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
