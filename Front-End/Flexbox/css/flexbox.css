@@ -1,0 +1,44 @@
+.headerPrincipal .container{
+    display: flex;
+    align-items: center;
+    /* Hacer que el flexbox este uno al lado del otro ocupando el maxiomo espacio */
+    justify-content: space-between;
+
+}
+
+.headerPrincipal-nav{
+    display: flex;
+
+}
+
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm{
+    width: 25%;
+
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list{
+    /* Dejo la lista en forma de columna */
+    display: flex;
+    flex-direction: column;
+    /* Limito las columnas a tantos pixeles y no dejo que se pasen del maximo */
+    height: 265px;
+    flex-wrap: wrap;
+}
