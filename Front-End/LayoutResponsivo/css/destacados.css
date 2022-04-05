@@ -22,7 +22,7 @@
 }
 
 .destacados__panel-imagen{
-    width: 100vw;
+    width: 90vw;
     box-shadow: 0 2px 10px 5px #000020;
     margin-bottom: .5rem;
 }
@@ -37,4 +37,11 @@
     color: var(--boton-rojo);
     border-color: var(--boton-rojo);
     margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .destacados__panel-imagen{
+        width: 50vw;
+    }
+    
 }
