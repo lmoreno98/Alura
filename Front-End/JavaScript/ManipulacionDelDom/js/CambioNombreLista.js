@@ -1,14 +1,22 @@
 (() => {
+
+    const addTask = (evento) => {
+        const list = document.querySelector(".cardsList");
+        const task = createTask(evento);
+        list.appendChild(task);
+    }
     // Funciones anonimas con =>
     const createTask = (evento) => {
         // Hago que cuando clique el formulario no se reinicie la pantalla
         evento.preventDefault();
-
-
         // Capturo el valor de un input
         const input = document.querySelector(".inputForm");
+        const calendar = document.querySelector(".inputDate");
+        const date = calendar.value;
+        //Formateo la fecha con moment
+        const dateFormat = moment(date).format("DD/MM/YYYY");
         const value = input.value;
-        const list = document.querySelector(".cardsList");
+        
         input.value = "";
 
         //Creo los elementos de la lista
@@ -23,15 +31,18 @@
         taskContent.appendChild(checkComplete())
         taskContent.appendChild(titleTask);
         // Agrego el elemento content a html
+        const dateElement = document.createElement("span");
+        dateElement.innerHTML = dateFormat;
         task.appendChild(taskContent);
+        task.appendChild(dateElement);
         task.appendChild(deleteIcon());
-        // Agrego el elemento al padre
-        list.appendChild(task);
+        return task;
+        
     }
 
     // Hago que un boton realize algo
     const button = document.querySelector(".btnCreate");
-    button.addEventListener("click", createTask);
+    button.addEventListener("click", addTask);
 
     // check de elemeto completo
     const checkComplete = () => {
@@ -58,10 +69,11 @@
     
     const deleteTasks = (event) => {
         // Busco el elemento padre
-        console.log(event.target.parentElement);
+
         const parent = event.target.parentElement;
         parent.remove();
         
     }
 
 })();
+
