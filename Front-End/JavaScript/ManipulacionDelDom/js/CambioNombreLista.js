@@ -5,10 +5,14 @@
         const task = createTask(evento);
         list.appendChild(task);
     }
+
+    const taskList = [];
     // Funciones anonimas con =>
     const createTask = (evento) => {
         // Hago que cuando clique el formulario no se reinicie la pantalla
         evento.preventDefault();
+        const taskList = JSON.parse(localStorage.getItem('task')) || [];
+        console.log(taskList);
         // Capturo el valor de un input
         const input = document.querySelector(".inputForm");
         const calendar = document.querySelector(".inputDate");
@@ -23,6 +27,14 @@
         const task = document.createElement("li");
         task.classList.add("card");
         const taskContent = document.createElement("div");
+        const taskObj = {
+            value,
+            dateFormat,
+        };
+
+        taskList.push(taskObj);
+
+        sessionStorage.setItem("tasks", JSON.stringify(taskList));
         const titleTask = document.createElement("span");
         titleTask.classList.add("task");
         titleTask.innerText = value;
