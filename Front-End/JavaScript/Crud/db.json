@@ -4,6 +4,11 @@
       "nombre": "Harland Lohora",
       "email": "harland@alura.com",
       "id": 1
+    },
+    {
+      "nombre": "Luciano Moreno",
+      "email": "luchomoreno98@gmail.com",
+      "id": "8e3e9a97-66b6-4ce1-a9ff-47c9dc3e51d6"
     }
   ]
 }
