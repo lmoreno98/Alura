@@ -1,0 +1,28 @@
+import javax.print.event.PrintEvent;
+
+public class Condicionales {
+    public static void main(String[] args) {
+
+        // If igual a c
+        System.out.println("probando condicionales");
+
+        int edad = 20;
+        int cantidadPersonas = 3;
+
+        if (edad >= 18) {
+            System.out.println("Tienes más de 18 años");
+            System.out.println("Bienvenido ");
+        } else {
+            if (cantidadPersonas >= 2) {
+                System.out.println("No tienes 18 años, pero puedes ingresar, porque estás acompañado");
+            } else {
+                System.out.println("Lamentablemente no puedes ingresar");
+            }
+        }
+
+        // Booleanos( || or, && and)
+        boolean condition = false;
+        System.out.println(condition);
+
+    }
+}
