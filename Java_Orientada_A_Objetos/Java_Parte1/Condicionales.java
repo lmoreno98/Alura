@@ -1,5 +1,3 @@
-import javax.print.event.PrintEvent;
-
 public class Condicionales {
     public static void main(String[] args) {
 
