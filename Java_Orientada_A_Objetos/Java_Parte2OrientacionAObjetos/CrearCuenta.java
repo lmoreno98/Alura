@@ -6,15 +6,15 @@ public class CrearCuenta {
         
         // Creo una variable para asignar una nueva cuenta nombre de la clase
         Cuenta primeraCuenta = new Cuenta();
-        primeraCuenta.saldo = 1000;
-        primeraCuenta.numero = 001;
-        primeraCuenta.agencia = 12;
-        primeraCuenta.titular = "Luciano";
-        System.out.println(primeraCuenta.saldo);
+        primeraCuenta.deposita(1000);
+        primeraCuenta.setNumero(001);
+        primeraCuenta.setAgencia(12);
+        //primeraCuenta.titular = "Luciano";
+        System.out.println(primeraCuenta.getSaldo());
         
         Cuenta segundaCuenta = new Cuenta();
-        segundaCuenta.saldo = 2000;
-        System.out.println(segundaCuenta.saldo);
+        segundaCuenta.deposita(2000);
+        System.out.println(segundaCuenta.getSaldo());
         
     }
     
